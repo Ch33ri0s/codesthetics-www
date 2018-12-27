@@ -10,7 +10,7 @@
         <li @click="menuClick()"><a>Instagram</a></li>
         <li @click="menuClick()"><a>Twitter</a></li>
         <li @click="menuClick()"><a>Github</a></li>
-        <li @click="menuClick()" class="dropdown"><a><icon style="font-size: 1.3rem" class="dropdown-icon" icon="caret-down"/> Social</a></li>
+        <li @click="menuClick()" class="dropdown"><a>Social</a></li>
       </ul>
     </div>
   </div>
@@ -27,14 +27,11 @@ export default {
   methods: {
     menuClick(){
       var myMenu = document.querySelector('.social');
-      var myIcon = document.querySelector('.dropdown-icon');
       if (this.isActive === false) {
-        myMenu.style.transform = "translateY(40%)";
-        myIcon.style.transform = "rotate(180deg)";
+        myMenu.style.transform = "translateY(36%)";
         this.isActive = true;
       } else {
         myMenu.style.transform = "translateY(-42%)";
-        myIcon.style.transform = "rotate(0deg)";
         this.isActive = false;
       }
     }
@@ -83,9 +80,13 @@ export default {
     box-shadow: 0 3px 6px rgba(0, 0, 0, .16);
     z-index: 20;
     transition: all .65s cubic-bezier(0.175, 0.885, 0.32, 1.5);
+    -webkit-transition: all .65s cubic-bezier(0.175, 0.885, 0.32, 1.5);
     animation-name: slideInTop;
     animation-duration: .45s;
-    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.5); 
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.5);
+    -webkit-animation-name: slideInTop;
+    -webkit-animation-duration: .45s;
+    -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.5);
     .logo {
       color: white;
       font-size: 3rem;
@@ -105,18 +106,18 @@ export default {
     width: 10rem;
     transform: translateY(-42%);
     z-index: 10;
-    height: 15rem;
+    height: 16rem;
     overflow: hidden;
     box-shadow: 0 3px 6px rgba(0, 0, 0, .16);
-    transition: all .45s ease;
+    transition: all .65s ease;
+    -webkit-transition: all .65s ease;
     ul {
       li {
         display: flex;
         justify-content: center;
         align-items: center;
         padding: .8rem;
-        border-bottom: 1px solid;
-        border-image: linear-gradient(to right, transparent, rgb(245, 245, 245), transparent) 10;
+        border-top: 1px solid rgba(242, 242, 242, .35);
         width: 100%;
         height: 100%;
         color: white;

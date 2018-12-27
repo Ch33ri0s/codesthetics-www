@@ -13,7 +13,7 @@
       </div>
       <div class="technologies-wrapper">
         <div class="content-block">
-          <h2>Technologies</h2>
+          <h3>Technologies</h3>
           <div class="tech-icon-wrapper">
             <img class="tech-icon" src="../assets/html5.svg" alt="html5-icon">
             <img class="tech-icon" src="../assets/css3.svg" alt="css3-icon">
@@ -64,11 +64,14 @@ export default {
   }
 
   .home-wrapper {
-    background: linear-gradient(to bottom, #4E00FF, #99FAFF, #00CEFF);
+    // background: linear-gradient(to bottom, #4E00FF, #99FAFF, #00CEFF);
+    background: #43C6AC;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #F8FFAE, #43C6AC);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #F8FFAE, #43C6AC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     width: 100%;
     position: relative;
     max-width: 100%;
-    height: 200rem;
+    height: 217rem;
     overflow: hidden;
     z-index: 0;
     .cover-wrapper {
@@ -99,8 +102,7 @@ export default {
           text-align: right;
           font-size: 4rem;
           font-weight: 500;
-          border-bottom: 1.8px solid;
-          border-image: linear-gradient(to right, transparent, rgb(245, 245, 245)) 10;
+          border-bottom: 1px solid rgba(242, 242, 242, .35);
           padding-bottom: 5rem;
         }
         .tagline {
@@ -168,15 +170,13 @@ export default {
       z-index: 1;
       width: 100%;
       height: 300px;
-      h2 {
+      h3 {
         font-family: 'Courier New', Courier, monospace;
         font-size: 4rem;
         color: #333;
-        border-bottom: 1.8px solid;
-        border-image: linear-gradient(to right, transparent, rgb(220, 220, 220), transparent) 10;
+        border-bottom: 1px solid rgba(242, 242, 242, 1);
         padding-bottom: 5rem;
         z-index: 1;
-        text-transform: uppercase;
         @media (max-width: 600px) {
           font-size: 2.8rem;
         }

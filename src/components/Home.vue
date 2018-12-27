@@ -96,7 +96,9 @@ export default {
         margin-left: 7.5rem;
         margin-right: 7.5rem;
         @media (max-width: 600px) {
-          padding: 4rem;
+          padding: 2rem;
+          margin-left: 4rem;
+          margin-right: 4rem;
         }
         h1 {
           font-family: 'Courier New', Courier, monospace;

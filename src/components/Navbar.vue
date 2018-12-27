@@ -103,10 +103,10 @@ export default {
     left: 0;
     margin-left: auto;
     margin-right: auto;
-    width: 10rem;
+    width: 100px;
     transform: translateY(-42%);
     z-index: 10;
-    height: 16rem;
+    height: 160px;
     overflow: hidden;
     box-shadow: 0 3px 6px rgba(0, 0, 0, .16);
     transition: all .65s ease;
@@ -116,7 +116,7 @@ export default {
         display: flex;
         justify-content: center;
         align-items: center;
-        padding: .8rem;
+        padding: 8px;
         border-top: 1px solid rgba(242, 242, 242, .35);
         width: 100%;
         height: 100%;

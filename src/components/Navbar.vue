@@ -112,14 +112,18 @@ export default {
     transition: all .65s ease;
     -webkit-transition: all .65s ease;
     ul {
+      display: flex;
+      flex-direction: column;
+      align-content: flex-end;
+      height: 100%;
       li {
         display: flex;
         justify-content: center;
         align-items: center;
-        padding: 8px;
-        border-top: 1px solid rgba(242, 242, 242, .35);
+        // padding: 8px;
         width: 100%;
         height: 100%;
+        border-top: 1px solid rgba(242, 242, 242, .35);
         color: white;
         &:hover {
           background: #444;

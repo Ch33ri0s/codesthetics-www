@@ -6,11 +6,11 @@
     </div>
     <div id="social" class="social">
       <ul>
-        <li @click="menuClick()"><a>Facebook</a></li>
-        <li @click="menuClick()"><a>Instagram</a></li>
-        <li @click="menuClick()"><a>Twitter</a></li>
-        <li @click="menuClick()"><a>Github</a></li>
-        <li @click="menuClick()" class="dropdown"><a>Social</a></li>
+        <li class="social-link" @click="menuClick()"><a href="https://www.facebook.com/tenysonpartridge">Facebook</a></li>
+        <li class="social-link"  @click="menuClick()"><a href="https://www.instagram.com/tenyson11">Instagram</a></li>
+        <li class="social-link"  @click="menuClick()"><a>Twitter</a></li>
+        <li class="social-link"  @click="menuClick()"><a>Github</a></li>
+        <li @click="menuClick()" class="social-dropdown">Social</li>
       </ul>
     </div>
   </div>
@@ -89,6 +89,9 @@ export default {
     -webkit-animation-name: slideInTop;
     -webkit-animation-duration: .45s;
     -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.5);
+    @media (max-width: 600px) {
+      width: 100%;
+    }
     .logo {
       color: white;
       font-size: 3rem;
@@ -135,12 +138,44 @@ export default {
           background: rgb(75, 75, 75);
         }
         a {
+          position: relative;
           font-family: 'muliregular', sans-serif;
           color: white;
           font-size: 1.05rem;
           text-transform: uppercase;
           letter-spacing: 1px;
+          text-decoration: none;
+
         }
+        a:before {
+          content: "";
+          position: absolute;
+          width: 100%;
+          height: 1px;
+          bottom: -5px;
+          left: 0;
+          background-color: white;
+          visibility: hidden;
+          -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+          -webkit-transition: all 0.3s ease-in-out 0s;
+          transition: all 0.3s ease-in-out 0s;
+        }
+
+        a:hover:before {
+          visibility: visible;
+          -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+        }
+      }
+      .social-dropdown {
+        // font-weight: bold;
+        position: relative;
+        font-family: 'muliregular', sans-serif;
+        color: white;
+        font-size: 1.4rem;
+        text-transform: uppercase;
+        letter-spacing: 1px;
       }
     }
   }

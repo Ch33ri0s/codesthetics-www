@@ -68,8 +68,6 @@ export default {
     background: #43C6AC;
     background: -webkit-linear-gradient(to top, #F8FFAE, #43C6AC);
     background: linear-gradient(to top, #F8FFAE, #43C6AC);
-
-
     width: 100%;
     position: relative;
     max-width: 100%;
@@ -131,11 +129,13 @@ export default {
           h3 {
             font-size: 2.8rem;
             text-align: left;
+            padding-bottom: 2rem;
 
           }
           .tagline {
             font-size: 1.8rem;
             text-align: left;
+            padding-top: 2rem;
           }
         }
       }
@@ -152,6 +152,8 @@ export default {
         height: 35rem;
         @media (max-width: 600px) {
           margin: 0;
+          width: 25rem;
+          height: 25rem;
         }
       }
       .background-text {

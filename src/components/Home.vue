@@ -65,9 +65,11 @@ export default {
 
   .home-wrapper {
     // background: linear-gradient(to bottom, #4E00FF, #99FAFF, #00CEFF);
-    background: #43C6AC;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to top, #F8FFAE, #43C6AC);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to top, #F8FFAE, #43C6AC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #43C6AC;
+    background: -webkit-linear-gradient(to top, #F8FFAE, #43C6AC);
+    background: linear-gradient(to top, #F8FFAE, #43C6AC);
+
+
     width: 100%;
     position: relative;
     max-width: 100%;
@@ -83,9 +85,16 @@ export default {
       height: 60rem;
       overflow: hidden;
       z-index: 0;
+      @media (max-width: 600px){
+        flex-direction: column;
+        margin-top: 10rem;
+        text-align: left;
+      }
       .header-block {
         color: white;
         z-index: 1;
+        margin-left: 7.5rem;
+        margin-right: 7.5rem;
         @media (max-width: 600px) {
           padding: 4rem;
         }
@@ -115,27 +124,32 @@ export default {
         @media (max-width: 600px) {
           h1 {
             font-size: 3.6rem;
+            text-align: left;
           }
           h3 {
             font-size: 2.8rem;
+            text-align: left;
+
           }
           .tagline {
             font-size: 1.8rem;
+            text-align: left;
           }
         }
       }
       .screen {
-        position: sticky;
+        position: relative;
         top: 0;
         right: 0;
         left: 0;
         z-index: 1;
         align-self: center;
-        margin-left: 15rem;
-        width: 30rem;
-        height: 30rem;
+        margin-left: 7.5rem;
+        margin-right: 7.5rem;
+        width: 35rem;
+        height: 35rem;
         @media (max-width: 600px) {
-          display: none;
+          margin: 0;
         }
       }
       .background-text {
@@ -191,9 +205,10 @@ export default {
           height: 65px;
           padding-left: 1.5rem;
           padding-right: 1.5rem;
+          transition: all .15s ease;
           &:hover {
             cursor: pointer;
-            transform: scale(1.1, 1.1);
+            transform: scale(1.2, 1.2);
           }
         }
       }

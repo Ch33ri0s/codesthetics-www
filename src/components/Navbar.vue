@@ -69,6 +69,8 @@ export default {
     position: fixed;
     margin-left: auto;
     margin-right: auto;
+    border-left: 3px solid rgba(242, 242, 242, .35);
+    border-right: 3px solid rgba(242, 242, 242, .35);
     left: 0;
     right: 0;
     justify-content: center;

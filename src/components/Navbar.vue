@@ -7,10 +7,10 @@
     <div id="social" class="social">
       <ul>
         <li class="social-link" @click="menuClick()"><a href="https://www.facebook.com/tenysonpartridge">Facebook</a></li>
-        <li class="social-link"  @click="menuClick()"><a href="https://www.instagram.com/tenyson11">Instagram</a></li>
-        <li class="social-link"  @click="menuClick()"><a>Twitter</a></li>
-        <li class="social-link"  @click="menuClick()"><a>Github</a></li>
-        <li @click="menuClick()" class="social-dropdown">Social</li>
+        <li class="social-link" @click="menuClick()"><a href="https://www.instagram.com/tenyson11">Instagram</a></li>
+        <li class="social-link" @click="menuClick()"><a>Twitter</a></li>
+        <li class="social-link" @click="menuClick()"><a>Github</a></li>
+        <li @click="menuClick()" class="social-dropdown">Menu</li>
       </ul>
     </div>
   </div>
@@ -69,8 +69,8 @@ export default {
     position: fixed;
     margin-left: auto;
     margin-right: auto;
-    border-left: 3px solid rgba(242, 242, 242, .35);
-    border-right: 3px solid rgba(242, 242, 242, .35);
+    border-left: 3px solid white;
+    border-right: 3px solid white;
     left: 0;
     right: 0;
     justify-content: center;

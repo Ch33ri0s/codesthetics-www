@@ -32,10 +32,6 @@
         <div class="grid-item"></div>
         <div class="grid-item"></div>
       </div>
-      <div class="grid-gallery">
-        <div class="grid-item"></div>
-        <div class="grid-item"></div>
-      </div>
     </div>
     <Footer/>
   </div>
@@ -71,7 +67,7 @@ export default {
     width: 100%;
     position: relative;
     max-width: 100%;
-    height: 217rem;
+    height: 176rem;
     overflow: hidden;
     z-index: 0;
     .cover-wrapper {
@@ -80,7 +76,8 @@ export default {
       align-items: center;
       justify-content: center;
       width: 100%;
-      height: 60rem;
+      // height: 60rem;
+      height: 80vh;
       overflow: hidden;
       z-index: 0;
       @media (max-width: 600px){
@@ -191,7 +188,7 @@ export default {
       h3 {
         font-family: 'Courier New', Courier, monospace;
         font-size: 4rem;
-        color: #333;
+        color: #777777;
         border-bottom: 1px solid rgba(242, 242, 242, 1);
         padding-bottom: 5rem;
         z-index: 1;
